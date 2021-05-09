@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:id="@+id/txtMission"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@+id/editVision"
+        android:layout_marginTop="5dp"
+        android:text="@string/txtMission"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <TextView
+        android:id="@+id/txtVision"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/txtVision"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <ImageView
+        android:id="@+id/imageFashion1"
+        android:layout_width="115dp"
+        android:layout_height="104dp"
+        android:layout_below="@+id/editMission"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/fashion1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <ImageView
+        android:id="@+id/imageFashion2"
+        android:layout_width="115dp"
+        android:layout_height="104dp"
+        android:layout_below="@+id/editMission"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/fashion2"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <ImageView
+        android:id="@+id/imageFashion3"
+        android:layout_width="115dp"
+        android:layout_height="104dp"
+        android:layout_below="@+id/editMission"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/fashion3"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <EditText
+        android:id="@+id/editVision"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_below="@+id/txtVision"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="@string/editVission"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <EditText
+        android:id="@+id/editMission"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_below="@+id/txtMission"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="@string/editMission"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PantSQLiteDemo</string>
+    <string name="btnChoose">Choose Image</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnList">Pants List</string>
+    <string name="edtPrice" />
+    <string name="edtName" />
+    <string name="btnUpdate">Update</string>
+    <string name="btnAddToCard">Add To Card</string>
+    <string name="btnCheckOut">CheckOut</string>
+    <string name="btnMultiple">*</string>
+    <string name="btnCustomerView">CustomerView</string>
+    <string name="btnView">View</string>
+    <string name="btnAddCard">AddToCard</string>
+    <string name="btnBuyNow">BuyNow</string>
+    <string name="editName">Name</string>
+    <string name="editPrice">Price</string>
+    <string name="editSize">Size</string>
+    <string name="editColor">Color</string>
+    <string name="txtVision">Our Vision</string>
+    <string name="txtMission">Our Mission</string>
+    <string name="editVission">To innovate, to lead, to enhance,to provide best-value products and services to global customers. to make a diffrence throught our branding to stay ahead of fashion trends, market changes and the latest technology. To enhance the quality of life for our bussiness partners, customers and employees.</string>
+    <string name="editMission">Design and deliver authentic, out door, high-value products for active consumers of all ages.</string>
+</resources>

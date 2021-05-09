@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout tools:context=".RegisterActivity" android:paddingTop="16dp" android:paddingRight="18dp" android:paddingLeft="18dp" android:paddingBottom="16dp" android:orientation="vertical" android:background="@drawable/new_login_gradients" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+    <LinearLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <EditText android:background="@android:color/transparent" android:layout_height="wrap_content" android:layout_width="match_parent" android:drawableLeft="@drawable/round_account_circle_white_18dp" android:maxLines="1" android:textColorHint="#ffffff" android:hint="Name" android:padding="8dp" android:inputType="textEmailAddress" android:ems="10" android:drawablePadding="12dp" android:layout_marginTop="50dp" android:id="@+id/etRegName"/>
+
+    <View android:background="#f9d7db" android:layout_height="1dp" android:layout_width="match_parent"/>
+
+    <EditText android:background="@android:color/transparent" android:layout_height="wrap_content" android:layout_width="match_parent" android:drawableLeft="@drawable/round_phone_white_18dp" android:maxLines="1" android:textColorHint="#ffffff" android:hint="Phone number" android:padding="8dp" android:inputType="number" android:ems="10" android:drawablePadding="12dp" android:layout_marginTop="8dp" android:id="@+id/etRegPhone"/>
+
+    <View android:background="#f9d7db" android:layout_height="1dp" android:layout_width="match_parent"/>
+
+    <EditText android:background="@android:color/transparent" android:layout_height="wrap_content" android:layout_width="match_parent" android:drawableLeft="@drawable/round_email_white_18dp" android:maxLines="1" android:textColorHint="#ffffff" android:hint="Gmail" android:padding="8dp" android:inputType="textEmailAddress" android:ems="10" android:drawablePadding="12dp" android:layout_marginTop="8dp" android:id="@+id/etRegGmail"/>
+
+    <View android:background="#f9d7db" android:layout_height="1dp" android:layout_width="match_parent"/>
+
+    <EditText android:paddingTop="8dp" android:paddingRight="8dp" android:paddingLeft="8dp" android:paddingBottom="8dp" android:background="@android:color/transparent" android:layout_height="wrap_content" android:layout_width="match_parent" android:drawableLeft="@drawable/baseline_lock_white_18dp" android:maxLines="1" android:textColorHint="#ffffff" android:hint="Password" android:inputType="textPassword" android:ems="10" android:drawablePadding="12dp" android:layout_marginTop="4dp" android:id="@+id/etRegPassword"/>
+
+    <View android:background="#f9d7db" android:layout_height="1dp" android:layout_width="match_parent"/>
+
+    <Button android:background="@drawable/background_login" android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="16dp" android:layout_marginTop="30dp" android:id="@+id/btnRegLogin" android:clickable="true" android:textColor="#f16f7d" android:textSize="18sp" style="@style/Base.TextAppearance.AppCompat.Body1" android:textStyle="normal" android:textAllCaps="false" android:text="Register"/>
+
+    <Button android:background="@drawable/background_login" android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="16dp" android:layout_marginTop="30dp" android:id="@+id/btnGotoLogin" android:clickable="true" android:textColor="#f16f7d" android:textSize="18sp" style="@style/Base.TextAppearance.AppCompat.Body1" android:textStyle="normal" android:textAllCaps="false" android:text="Login"/>
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

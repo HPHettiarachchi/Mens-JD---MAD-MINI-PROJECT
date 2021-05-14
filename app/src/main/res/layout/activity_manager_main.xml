@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".ManagerMainActivity">
+
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/editName"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtName"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/editPrice"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edtSize"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPrice"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/editSize"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edtColor"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSize"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/editColor"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="382dp"
+        android:layout_height="198dp"
+        android:layout_below="@id/edtColor"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#131313"
+        android:text="@string/btnChoose" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnChoose"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/btnAdd" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/btnList" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnList"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/btnView" />
+</RelativeLayout>

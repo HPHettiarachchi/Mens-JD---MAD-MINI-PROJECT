@@ -47,7 +47,7 @@ public class PantsList extends AppCompatActivity {
         gridView.setAdapter(adapter);
 
         //get all data from sqlite
-        Cursor cursor = MainActivity.sqLiteHelper.getData("SELECT * FROM JeansItems");
+        Cursor cursor = ManagerMainActivity.sqLiteHelper.getData("SELECT * FROM JeansItems");
         list.clear();
         while (cursor.moveToNext()) {
             int id = cursor.getInt(0);
@@ -74,7 +74,7 @@ public class PantsList extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int items) {
                         if (items == 0){
                             //update
-                            Cursor c = MainActivity.sqLiteHelper.getData("SELECT id FROM JeansItems");
+                            Cursor c = ManagerMainActivity.sqLiteHelper.getData("SELECT id FROM JeansItems");
                             ArrayList<Integer> arrID = new ArrayList<Integer>();
                             while (c.moveToNext()){
                                 arrID.add(c.getInt(0));
@@ -84,7 +84,7 @@ public class PantsList extends AppCompatActivity {
                         }else{
                             //delete
 
-                            Cursor c = MainActivity.sqLiteHelper.getData("SELECT id FROM JeansItems");
+                            Cursor c = ManagerMainActivity.sqLiteHelper.getData("SELECT id FROM JeansItems");
                             ArrayList<Integer> arrID = new ArrayList<Integer>();
                             while (c.moveToNext()) {
                                 arrID.add(c.getInt(0));
@@ -134,13 +134,13 @@ public class PantsList extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    MainActivity.sqLiteHelper.updateData(
+                    ManagerMainActivity.sqLiteHelper.updateData(
                             position,
                             edtName.getText().toString().trim(),
                             edtPrice.getText().toString().trim(),
                             edtSize.getText().toString().trim(),
                             edtColor.getText().toString().trim(),
-                            MainActivity.imageViewToByte(imageViewPants)
+                            ManagerMainActivity.imageViewToByte(imageViewPants)
                                         );
                     dialog.dismiss();
                     Toast.makeText(getApplicationContext(),"Update successfully!!!",Toast.LENGTH_SHORT).show();
@@ -161,7 +161,7 @@ public class PantsList extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 try{
-                    MainActivity.sqLiteHelper.deleteData(idPant);
+                    ManagerMainActivity.sqLiteHelper.deleteData(idPant);
                     Toast.makeText(getApplicationContext(),"Delete successfully!!!",Toast.LENGTH_SHORT).show();
                 }catch (Exception e){
                     Log.e("error", e.getMessage());
@@ -179,7 +179,7 @@ public class PantsList extends AppCompatActivity {
     }
     private void updatePantsList() {
         //get all data from sqlite
-        Cursor cursor = MainActivity.sqLiteHelper.getData("SELECT * FROM JeansItems");
+        Cursor cursor = ManagerMainActivity.sqLiteHelper.getData("SELECT * FROM JeansItems");
         list.clear();
         while (cursor.moveToNext()) {
             int id = cursor.getInt(0);

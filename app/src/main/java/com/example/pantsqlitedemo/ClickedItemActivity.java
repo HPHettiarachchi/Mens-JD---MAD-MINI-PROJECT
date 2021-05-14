@@ -1,5 +1,7 @@
 package com.example.pantsqlitedemo;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,9 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class ClickedItem extends AppCompatActivity {
+public class ClickedItemActivity extends AppCompatActivity {
     ImageView imageView;
     TextView textName,textPrice,textSize,textColor;
     EditText editPrice,editQyt,editTotal;
@@ -19,9 +19,9 @@ public class ClickedItem extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.clicked_item_activity);
+        setContentView(R.layout.activity_clicked_item);
 
-        imageView = findViewById(R.id.imgPant);
+        imageView = findViewById(R.id.imageView);
         textName = findViewById(R.id.txtName);
         textPrice = findViewById(R.id.txtPrice);
         textSize = findViewById(R.id.txtSize);
@@ -29,7 +29,7 @@ public class ClickedItem extends AppCompatActivity {
         editPrice = findViewById(R.id.editPrice);
         editQyt = findViewById(R.id.editQuantity);
         editTotal = findViewById(R.id.editTotalPrice);
-        AddToCard = findViewById(R.id.btnAddCard);
+        AddToCard = findViewById(R.id.btnAddToCard);
         CheckOut = findViewById(R.id.btnCheckOut);
         Multiple = findViewById(R.id.btnMultiple);
 

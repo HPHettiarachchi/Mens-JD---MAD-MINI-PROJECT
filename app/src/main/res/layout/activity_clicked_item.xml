@@ -2,28 +2,27 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical">
+    android:background="@drawable/background"
+    tools:context=".ClickedItemActivity">
 
 
     <ImageView
-        android:id="@+id/imgPant"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginLeft="19dp"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/editTotalPrice"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="fitXY"/>
 
     <TextView
         android:id="@+id/txtName"
         android:layout_width="122dp"
         android:layout_height="44dp"
-        android:layout_below="@id/imgPant"
+        android:layout_below="@id/imageView"
         android:layout_marginLeft="19dp"
         android:layout_marginTop="12dp"
         android:text="Name"
@@ -61,11 +60,10 @@
         android:textSize="17dp" />
 
     <Button
-        android:id="@+id/btnAddCard"
+        android:id="@+id/btnAddToCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtColor"
-        android:text="@string/btnAddCard" />
+        android:text="@string/btnAddToCard" />
 
     <Button
         android:id="@+id/btnCheckOut"
@@ -73,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="-50dp"
-        android:layout_below="@id/btnAddCard"
+        android:layout_below="@id/btnAddToCard"
         android:text="@string/btnCheckOut" />
 
     <EditText
@@ -115,6 +113,5 @@
         android:layout_below="@id/btnMultiple"
         android:inputType="textPersonName"
         android:text="" />
-
 
 </RelativeLayout>

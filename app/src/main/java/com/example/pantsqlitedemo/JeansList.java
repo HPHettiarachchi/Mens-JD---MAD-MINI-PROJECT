@@ -49,7 +49,7 @@ public class JeansList extends AppCompatActivity {
         gridView.setAdapter(adapter);
 
         //get all data from sqlite
-        Cursor cursor = MainActivity.sqLiteHelper.getData("SELECT * FROM JeansItems");
+        Cursor cursor = ManagerMainActivity.sqLiteHelper.getData("SELECT * FROM JeansItems");
         list.clear();
         while (cursor.moveToNext()) {
             int id = cursor.getInt(0);

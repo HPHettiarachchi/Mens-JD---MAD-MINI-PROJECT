@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/w14"
+    tools:context=".DisplayContactStore">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextName"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="21dp"
+            android:text="name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignBottom="@+id/editTextPhone"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="18dp"
+            android:text="phone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignBottom="@+id/editTextAddress"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="-42dp"
+            android:text="address"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignBottom="@+id/editTextAddress"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="24dp"
+            android:text="email"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"></EditText>
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextName"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_alignRight="@+id/editTextPhone"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextAddress"
+            android:layout_alignLeft="@+id/editTextAddress"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="-1dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"></EditText>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="112dp"
+            android:layout_height="66dp"
+            android:layout_alignLeft="@+id/editTextEmail"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginRight="158dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/shade5"
+            android:onClick="run"
+            android:text="save"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_dark"
+            android:textColorLink="@android:color/background_dark" />
+
+        <requestFocus />
+
+    </RelativeLayout>
+
+</ScrollView>

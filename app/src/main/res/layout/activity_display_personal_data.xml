@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/w14"
+    tools:context=".DisplayPersonalData">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextName"
+            android:layout_alignParentLeft="true"
+            android:text="@string/name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignBottom="@+id/editTextBirthday"
+            android:text="@string/birthday"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignBottom="@+id/editTextNic"
+            android:text="@string/nic"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignBottom="@+id/editTextBaddress"
+            android:text="@string/bAddress"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignBottom="@+id/editTextBphoneNum"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="@string/bPhoneNum"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignBottom="@+id/editTextMpassportNum"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="7dp"
+            android:text="@string/mPassportNum"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignBottom="@+id/editTextBloodGroup"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/bloodGroup"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"></EditText>
+
+
+        <EditText
+            android:id="@+id/editTextBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextName"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="6dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextBirthday"
+            android:layout_alignRight="@+id/editTextBirthday"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextBaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextNic"
+            android:layout_alignLeft="@+id/editTextNic"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"></EditText>
+
+        <EditText
+            android:id="@+id/editTextBphoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextNic"
+            android:layout_alignLeft="@+id/editTextNic"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="71dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"></EditText>
+
+        <EditText
+            android:id="@+id/editTextMpassportNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextBphoneNum"
+            android:layout_alignLeft="@+id/editTextBphoneNum"
+            android:layout_marginLeft="-9dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"></EditText>
+
+        <EditText
+            android:id="@+id/editTextBloodGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextMpassportNum"
+            android:layout_alignLeft="@+id/editTextMpassportNum"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"></EditText>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginLeft="129dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginRight="125dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/shade5"
+            android:onClick="run"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="@string/savePersonal"
+            android:textColor="@android:color/background_light" />
+
+        <requestFocus />
+    </RelativeLayout>
+</ScrollView>

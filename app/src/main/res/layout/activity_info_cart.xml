@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".InfoCartActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:id="@+id/firstCardView"
+        android:layout_height="320dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageViewInfo"
+                android:src="@drawable/j1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewInfo"
+                android:text="Jean Name"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:id="@+id/jeanNameinInfo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:textColor="@android:color/holo_red_light"
+                android:id="@+id/jeanPrice"
+                android:layout_alignRight="@+id/jeanNameinInfo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="60dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_below="@+id/imageViewInfo"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:id="@+id/secondCardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/firstCardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="130dp"
+                android:id="@+id/addquantity"
+                android:background="@drawable/ic_baseline_add_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/quantitynum"
+                android:textSize="28sp"
+                android:layout_toRightOf="@+id/addquantity"/>
+
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/subquantity"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/quantitynum"
+                android:background="@drawable/ic_baseline_remove_24"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quantitynum"
+                android:id="@+id/jeanColor"
+                android:textSize="18sp"
+                android:text="color"/>
+
+            <TextView
+                android:id="@+id/jeanSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jeanColor"
+                android:text="size"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/jeanSize"
+                android:background="#3F51B5"
+                android:textStyle="bold"
+                android:id="@+id/addtocart"
+                android:textColor="@android:color/white"
+                android:text="Add to cart"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
